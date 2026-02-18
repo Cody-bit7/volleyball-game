@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d23otm27itmoh"]
+
+[ext_resource type="PackedScene" uid="uid://b6fo65ymxf1qo" path="res://volleyball-game/models/Maps/court.fbx" id="1_abaqa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xyn27"]
+size = Vector3(111.439644, 1.6779785, 212.96027)
+
+[node name="static body" type="StaticBody3D" unique_id=234716964]
+
+[node name="court" parent="." unique_id=1831214269 instance=ExtResource("1_abaqa")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=636348976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04129982, 0.33898926, -0.0010681152)
+shape = SubResource("BoxShape3D_xyn27")
